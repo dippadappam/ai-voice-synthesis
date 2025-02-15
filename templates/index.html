@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Studio"</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1>Voice Studio</h1>
+        <div id="word-counter">0 words</div>
+      </div>
+      
+      <div class="input-section">
+        <textarea id="text-input" placeholder="Enter text to convert to speech..."></textarea>
+        
+        <div class="main-controls">
+          <select id="emotion">
+            <option value="youngmale">Young Male</option>
+            <option value="youngwoman">Young Woman</option>
+            <option value="oldman">Old Man</option>
+          </select>
+          
+          <div class="playback-control">
+            <button id="play-pause-btn" class="control-btn" title="Play/Pause">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="skip-backward" class="control-btn" title="Skip back 5s">
+              <i class="fas fa-backward"></i>
+            </button>
+            <div class="progress-container">
+              <div class="time current-time">0:00</div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <div class="time duration">0:00</div>
+            </div>
+            <button id="skip-forward" class="control-btn" title="Skip forward 5s">
+              <i class="fas fa-forward"></i>
+            </button>
+            <button id="download-btn" class="control-btn" title="Download">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
+          
+          <button id="generate-btn" class="primary-btn">
+            <i class="fas fa-microphone"></i> Generate
+          </button>
+        </div>
+      </div>
+
+      <div id="loading" style="display: none;">
+        <i class="fas fa-spinner fa-spin"></i> Generating speech...
+      </div>
+
+      <!-- Hidden native audio element -->
+      <audio id="audio-player"></audio>
+    </div>
+  </div>
+  
+  <script src="static/js/script.js"></script>
+</body>
+</html>
