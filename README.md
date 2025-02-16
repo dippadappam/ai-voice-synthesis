@@ -8,7 +8,6 @@ DEMO AND WALKTHROUGH
 
 
 
-<<<<<<< HEAD
 # ai-voice-synthesis
 =======
 # Voice Studio: AI Voice Synthesis
