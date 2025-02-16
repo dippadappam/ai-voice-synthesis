@@ -40,6 +40,4 @@ Current text-to-speech solutions often suffer from:
 - **Audio Processing:**  
   The generated audio is processed using libraries like Librosa for time stretching, pitch shifting, and energy adjustments before being served to the client.
 
-## Installation and Setup
 
->>>>>>> 4fa6ab20 (Initial commit)
